@@ -169,7 +169,8 @@ void AddSC_World_Chat();
 // start149
 // start150
 // start151
-// start152
+// VIP
+void AddSC_premium_commandscript();
 // start153
 // start154
 // start155
@@ -376,7 +377,8 @@ void AddCustomScripts()
 // end149
 // end150
 // end151
-// end152
+// VIP
+    AddSC_premium_commandscript();
 // end153
 // end154
 // end155
