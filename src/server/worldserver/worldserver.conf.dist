@@ -3914,6 +3914,15 @@ Guildhouse.SellCost = 500
 
 #
 ###################################################################################################
+#
+
+PlayedTimeReward.Interval = 0
+PlayedTimeReward.Money    = 0
+PlayedTimeReward.Honor    = 0
+PlayedTimeReward.Arena    = 0
+
+#
+###################################################################################################
 
 #
 # Prepatch by LordPsyan.
