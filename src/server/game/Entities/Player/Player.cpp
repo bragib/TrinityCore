@@ -4775,7 +4775,7 @@ void Player::BuildPlayerRepop()
     if (!GetMap()->IsBattlegroundOrArena())
         if (Guild* guild = GetGuild())
             if (guild->HasLevelForBonus(GUILD_BONUS_SCHNELLER_GEIST))
-                SetSpeed(MOVE_RUN, 2.0f, true);
+                SetSpeed(MOVE_RUN, 2.0f);
 
     SetMovement(MOVE_WATER_WALK);
     if (!GetSession()->isLogingOut())
@@ -4829,7 +4829,7 @@ void Player::ResurrectPlayer(float restore_percent, bool applySickness)
     SetMovement(MOVE_UNROOT);
 
     //Guild-Level-System (Bonus: Faster spirit)
-    SetSpeed(MOVE_RUN, 1.0f, true);
+    SetSpeed(MOVE_RUN, 1.0f);
 
     m_deathTimer = 0;
 

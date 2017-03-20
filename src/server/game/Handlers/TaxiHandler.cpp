@@ -209,7 +209,7 @@ void WorldSession::HandleMoveSplineDoneOpcode(WorldPacket& recvData)
     recvData.readPackGUID(guid);
 	
     // movement anticheat code
-    const Unit *mover = _player->m_mover;
+	const Unit *mover = _player->m_unitMovedByMe;
     const Player *plMover = mover->GetTypeId() == TYPEID_PLAYER ? (Player*)mover : NULL;
     if (!plMover)
         return;
