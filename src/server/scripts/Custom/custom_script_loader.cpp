@@ -32,8 +32,7 @@
 // start14
 // start15
 // start16
-    //GuildHouse NPC
-    void AddSC_guildmaster();
+// start17
 // start18
 // start19
 // start20
@@ -240,8 +239,7 @@ void AddCustomScripts()
 // end14
 // end15
 // end16
-    // GuildHouse NPC
-    AddSC_guildmaster();
+// end17
 // end18
 // end19
 // end20
