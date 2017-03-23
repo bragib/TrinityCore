@@ -16,6 +16,7 @@
  */
 
 // This is where scripts' loading functions should be declared:
+void AddSC_Transmogrification();
 // start01
 // start02
 // start03
@@ -223,6 +224,7 @@ void AddSC_premium_commandscript();
 // void Add${NameOfDirectory}Scripts()
 void AddCustomScripts()
 {
+    AddSC_Transmogrification();
 // end01
 // end02
 // end03
