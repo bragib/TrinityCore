@@ -16256,7 +16256,6 @@ QuestGiverStatus Player::GetQuestDialogStatus(Object* questgiver)
     QuestRelationBounds qr;
     QuestRelationBounds qir;
 
-    PlayerTalkClass->ClearMenus();
     switch (questgiver->GetTypeId())
     {
         case TYPEID_GAMEOBJECT:
@@ -16468,9 +16467,7 @@ void Player::AreaExploredOrEventHappens(uint32 questId)
                 q_status.Explored = true;
                 m_QuestStatusSave[questId] = QUEST_DEFAULT_SAVE_TYPE;
 
-                // if we cannot complete quest send exploration succeded (to mark exploration on client)
-                if (!CanCompleteQuest(questId))
-                    SendQuestComplete(questId);
+                SendQuestComplete(questId);
             }
         }
         if (CanCompleteQuest(questId))
